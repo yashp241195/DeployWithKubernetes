@@ -36,11 +36,11 @@ $ minikube dashboard
 run the "express-test-service" by
 
 $ kubectl get svc
-
+```
 NAME                   TYPE           CLUSTER-IP     EXTERNAL-IP    PORT(S)          AGE
 express-test-service   LoadBalancer   10.104.31.77   10.104.31.77   6100:32415/TCP   7m3s
 kubernetes             ClusterIP      10.96.0.1      < none >         443/TCP          44h
-
+```
 access the express app in your web browser with http://10.104.31.77:6100/
 
 $ curl 10.104.31.77:6100
