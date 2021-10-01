@@ -7,7 +7,7 @@ spec:
     app: express-test-app
   ports:
   - protocol: "TCP"
-    port: 6000
+    port: 6010
     targetPort: 3010
   type: LoadBalancer
 
@@ -20,7 +20,7 @@ spec:
   selector:
     matchLabels:
       app: express-test-app
-  replicas: 2
+  replicas: 3
   template:
     metadata:
       labels:
